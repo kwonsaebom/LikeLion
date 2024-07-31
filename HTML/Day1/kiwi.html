@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- html파일의 버전 명시(최신 버전의 html로 작성할 것)) -->
+<!--HTML Living STandard-->
+<html>
+  <head>
+    <!--meta data(데이터의 데이터 = 문서의 데이터))-->
+    <title>Fruits</title>
+    <style>
+      body {
+        background-image: url(./images/kiwi-bg.png);
+      }
+      div {
+        background-color: white;
+        width: auto; /* 부모 너비 기준 꽉참 */
+        height: auto; /* 자식 높이 기준 자동 조절 */
+
+        width: 400px;
+
+        margin: 100px auto;
+        padding: 40px;
+
+        border: 10px solid orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!--./ 현재폴더 ../ 상위폴더-->
+    <div>
+      <img src="./images/kiwi.png" />
+      <!-- div는 의미 x = 시멘틱 태그x-->
+      <h1>Kiwi</h1>
+      <!--의미 있는 태그 = 시맨틱 태그-->
+      <ul>
+        <li>Kiwi</li>
+        <li>Orange</li>
+        <li>Strawberry</li>
+      </ul>
+    </div>
+  </body>
+</html>
+```

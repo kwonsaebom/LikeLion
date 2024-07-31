@@ -1,0 +1,31 @@
+body {
+  background-color: #999;
+}
+
+div {
+  background-color: white;
+  width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  box-sizing: border-box;
+
+  text-align: center;
+  border-bottom: 50px solid brown;
+  border-radius: 20px 20px 0 0;
+}
+
+h1 {
+  color: brown;
+  font-size: 40px;
+  border-bottom: 10px solid brown;
+  padding: 0 20px;
+
+  width: fit-content; /*컨텐츠 크기에 맞춤 */
+  margin: 20px auto; /*좌우 가용 공간에 margin을 두어 가운데 정렬*/
+}
+p {
+  background-color: #ddd;
+  padding: 40px;
+  border: 1px solid #999;
+  color: #888;
+}

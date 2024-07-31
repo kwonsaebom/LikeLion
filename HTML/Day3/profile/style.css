@@ -1,0 +1,99 @@
+/* CSS Resets */
+body,
+p,
+ul {
+  margin: initial; /* 상속 안되는 속성을 초기화 할 때 */
+  padding: initial;
+}
+
+li {
+  list-style-type: none;
+}
+h1 {
+  margin: initial; /* 상속 안되는 속성을 초기화 할 때 */
+  font-size: inherit;
+  font-weight: inherit; /* 상속 되는 속성을 초기화 할 때 */
+}
+.main h2 {
+  margin: 0;
+}
+/* Design */
+body {
+  background-image: url(./images/background.gif);
+}
+
+.wrapper {
+  width: 800px;
+  margin: 60px auto;
+}
+
+.header {
+  background-image: url(./images/cover04.png);
+  text-align: center;
+  height: auto;
+  min-height: 400px;
+  color: white;
+}
+
+.header img.profile {
+  margin-top: 70px;
+  border: 6px solid white;
+  border-radius: 50%;
+  width: 140px;
+}
+
+.header h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.header p {
+  border-top: 8px solid white;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.main {
+  background-color: #e8e7e7;
+  padding: 5px;
+}
+
+.section {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+}
+
+.section.information {
+  background-image: url(images/icon-information.png);
+  background-repeat: no-repeat;
+  background-position: right 40px center;
+}
+
+.section.skill {
+  background-image: url(images/icon-skills.png);
+  background-repeat: no-repeat;
+  background-position: right 40px center;
+}
+
+.section h2 {
+  color: deeppink;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+.section .list li {
+  padding: 3px 8px;
+  border-left: 5px solid #e8e7e7;
+}
+
+.section .list li:hover {
+  border-color: deeppink;
+  color: deeppink;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #f4f4f4;
+}

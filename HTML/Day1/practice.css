@@ -1,0 +1,23 @@
+body {
+  background-image: url("./images/orange-bg.png");
+}
+
+div {
+  margin: 50px auto;
+  background-color: white;
+  text-align: center;
+  width: 500px;
+  padding: 40px;
+  border: 5px solid orange;
+  border-radius: 35px 0 35px 0;
+}
+
+h1 {
+  color: orange;
+}
+
+ul {
+  margin: 10px auto;
+  text-align: left;
+  padding: 0 40px 40px 40px;
+}
