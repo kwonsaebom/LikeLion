@@ -1,45 +1,60 @@
 /*RESET*/
-h1,
+body,
 ul {
   margin: unset;
   padding: unset;
+}
+
+h1,
+ul {
+  margin: unset;
   font-size: unset;
-  font-family: Arial;
 }
 
 li {
   list-style-type: none;
 }
+
+/*Typography*/
+:root {
+  font-family: "Arial";
+}
+
+/*Layout*/
+.wrapper {
+  width: 448px;
+  margin: 110px auto;
+}
+
 /*Design*/
 body {
   background-color: #d9d9d9;
 }
 
-.wrapper {
+.bucketlist {
   font-weight: bold;
-  background-color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  width: 448px;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .header {
-  color: #ff007a;
+  background-color: white;
   padding: 46px 0;
   border-bottom: 4px solid #dddddd;
 }
 
 .header h1 {
+  color: #ff007a;
   padding-left: 38px;
-  border-left: 8px solid #ff007a;
+  border-left: 8px solid;
   font-size: 24px;
+  line-height: 32px;
 }
 
 .content {
   background-color: #eeeeee;
   padding: 40px 38px 24px 40px;
-  border-radius: 0 0 20px 20px;
 }
 
 li {
@@ -55,4 +70,10 @@ li {
   background-image: url(./images/check.png);
   background-repeat: no-repeat;
   background-position: right 14px center; /* 배경 이미지를 오른쪽에서 14px만큼 왼쪽으로 이동 && center는 수직 방향에서 중앙에 배치 */
+  border-color: #759cff;
+  color: #759cff;
+}
+
+.final {
+  margin-bottom: 0px;
 }
