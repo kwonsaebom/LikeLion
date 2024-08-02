@@ -1,0 +1,116 @@
+/*reset*/
+body {
+  margin: unset;
+  padding: unset;
+}
+
+h1,
+p,
+ul,
+img {
+  margin: unset;
+  padding: unset;
+
+  font-family: unset;
+  font-size: unset;
+  font-weight: unset;
+}
+
+li {
+  list-style-type: none;
+}
+:root {
+  font-family: arial;
+}
+/*layout*/
+.wrapper {
+}
+/*design*/
+
+.laboratory {
+}
+
+.laboratory-header {
+  background-image: url(./images/header-bg.png);
+  padding-top: 100px;
+}
+
+.header-content {
+  width: 960px;
+  margin: 0 auto;
+  padding: 60px 60px 70px 60px;
+
+  background-image: url(./images/container-bg.png);
+  background-repeat: no-repeat;
+  background-position: right 54px top 54px;
+
+  border: 30px solid orange;
+  box-sizing: border-box;
+  color: orange;
+}
+
+.header-content h1 {
+  font-size: 32px;
+  border-bottom: 4px solid;
+  width: fit-content;
+  letter-spacing: 8px;
+  padding-bottom: 4px;
+}
+
+.header-content p {
+  padding-top: 30px;
+  line-height: 1.6;
+}
+
+.laboratory-content {
+  background-color: #dddddd;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.list li {
+  display: inline-block;
+}
+
+.list .item-container {
+  background-image: url(./images/type-a.png);
+  width: 300px;
+  margin: 30px 30px 30px 0;
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 0; /*인라인 요소라 이미지와 타이틀 태그 사이에 공백이 생기는 문제 해결 위해*/
+}
+
+.item-container.last {
+  margin-right: 0;
+}
+
+.list .title {
+  height: 50px;
+
+  color: orange;
+  text-align: left;
+  padding-left: 10px;
+  line-height: 3;
+  font-size: 16px;
+  font-weight: bold;
+
+  border-top: 4px solid;
+  background-color: white;
+  background-image: url(./images/play.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.laboratory-footer {
+  background-color: white;
+  border-top: 2px solid;
+  height: 50px;
+
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  line-height: 4;
+}

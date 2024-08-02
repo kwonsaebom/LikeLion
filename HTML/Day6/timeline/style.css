@@ -1,0 +1,88 @@
+/*Reset*/
+body,
+ol {
+  margin: unset;
+  padding: unset;
+}
+
+h1 {
+  margin: unset;
+  font-size: unset;
+  font-weight: unset;
+}
+
+li {
+  list-style-type: none;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Layout*/
+.wrapper {
+  width: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*Design*/
+body {
+  background-color: #0f63f4;
+}
+
+.timeline {
+  background-color: #387aec;
+  padding: 16px 0;
+}
+
+.timeline h1 {
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  padding: 60px 0;
+}
+.timeline-content {
+  box-shadow: inset 0 0 20px purple;
+}
+
+.timeline-list {
+  margin: -20px;
+}
+
+.timeline-list li {
+  width: 50%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: -120px;
+}
+
+.timeline-list li:nth-child(even) {
+  margin-left: auto;
+}
+
+.year {
+  background-color: white;
+  border-radius: 30px;
+  width: auto;
+  height: 400px;
+  padding: 40px;
+}
+
+.timeline-list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 960px) {
+  .timeline-header h1 {
+    font-size: 40px;
+    padding: 30px 0;
+  }
+
+  .timeline-list li {
+    width: unset;
+    margin-bottom: 40px;
+  }
+}
