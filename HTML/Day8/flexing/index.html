@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexing</title>
+    <style>
+      body {
+        background-color: brown;
+      }
+      .playground {
+        display: flex;
+        height: 500px;
+        flex-wrap: wrap;
+        padding: 20px;
+        background-color: aquamarine;
+
+        justify-content: cener;
+        align-items: center;
+        gap: 20px;
+      }
+      .frog {
+        border: 6px solid green;
+        border-radius: 10px;
+        background-color: mediumseagreen;
+        color: lime;
+        font-size: 40px;
+      }
+
+      .frog:nth-child(1) {
+        margin-right: auto;
+        margin-bottom: auto;
+      }
+
+      .frog:nth-child(5) {
+        margin-left: auto;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="playground">
+      <div class="frog"><img src="images/frog-3d.png" /></div>
+      <div class="frog"><img src="images/frog-cry.png" /></div>
+      <div class="frog"><img src="images/frog-disco.png" /></div>
+      <div class="frog"><img src="images/frog-dj.png" /></div>
+      <div class="frog"><img src="images/frog-eat.png" /></div>
+    </div>
+  </body>
+</html>

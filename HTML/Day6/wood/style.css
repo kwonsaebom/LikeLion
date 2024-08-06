@@ -23,19 +23,14 @@ li {
   font-family: arial;
 }
 /*layout*/
-.wrapper {
-}
+
 /*design*/
-
 .laboratory {
-}
-
-.laboratory-header {
   background-image: url(./images/header-bg.png);
   padding-top: 100px;
 }
 
-.header-content {
+.laboratory-header {
   width: 960px;
   margin: 0 auto;
   padding: 60px 60px 70px 60px;
@@ -49,7 +44,7 @@ li {
   color: orange;
 }
 
-.header-content h1 {
+.laboratory-header h1 {
   font-size: 32px;
   border-bottom: 4px solid;
   width: fit-content;
@@ -57,7 +52,7 @@ li {
   padding-bottom: 4px;
 }
 
-.header-content p {
+.laboratory-header p {
   padding-top: 30px;
   line-height: 1.6;
 }
@@ -81,7 +76,7 @@ li {
   font-size: 0; /*인라인 요소라 이미지와 타이틀 태그 사이에 공백이 생기는 문제 해결 위해*/
 }
 
-.item-container.last {
+.list .item-container.last {
   margin-right: 0;
 }
 
