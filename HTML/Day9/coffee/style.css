@@ -1,0 +1,13 @@
+/* Typography */
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url("images/background.png");
+}
+
+.l_wrapper {
+  background-color: white;
+  margin: auto;
+}
