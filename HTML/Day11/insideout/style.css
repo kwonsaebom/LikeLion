@@ -1,0 +1,157 @@
+/* Reset */
+body {
+  margin: unset;
+  padding: unset;
+  max-width: 1920px;
+}
+
+img {
+  vertical-align: unset;
+}
+
+h1,
+p,
+span {
+  margin: unset;
+  padding: unset;
+  font-size: unset;
+  font-weight: unset;
+}
+
+/* Typography */
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Layout */
+.l_wrapper {
+  max-width: 980px;
+  height: 100%;
+  margin: auto;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.header {
+  background-image: url("./images/Rectangle\ 2.png");
+  background-color: lightgray 50%;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+}
+
+/* Design */
+.header-title {
+  color: white;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 900;
+
+  background-color: #ea3629;
+  border-radius: 8px;
+  padding: 13px 0;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 980px;
+}
+
+.card {
+  background-color: white;
+  background-image: url(./images/joy.png);
+
+  background-position: left 20px top;
+  background-size: 240px 240px;
+  background-repeat: no-repeat;
+
+  border-radius: 12px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin: 80px 0;
+  padding: 0 40px;
+
+  min-height: 317px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+
+  position: relative;
+}
+
+.card.sad {
+  background-image: url(./images/sad.png);
+  background-position: right 20px bottom;
+  flex-direction: row-reverse;
+}
+
+.card.anger {
+  background-image: url(./images/anger.png);
+  background-position: left 20px bottom;
+}
+
+.card-image {
+  align-self: flex-end;
+  width: 240px;
+  height: 240px;
+}
+
+.card-title {
+  font-size: 32px;
+  font-weight: 900;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: absolute;
+  top: 30px;
+}
+.card-title::after {
+  content: "";
+  width: 100%;
+  padding: 0 4.5px;
+  height: 10px;
+  border-radius: 20px;
+}
+
+.card.joy .card-title {
+  color: #ffad08;
+  right: 40px;
+}
+.card.sad .card-title {
+  color: #578df9;
+  left: 40px;
+}
+.card.anger .card-title {
+  color: #e9292c;
+  right: 40px;
+}
+
+.card.joy .card-title::after {
+  background-color: #ffe53c;
+}
+.card.sad .card-title::after {
+  background-color: #b3e2ff;
+}
+.card.anger .card-title::after {
+  background-color: #ff9680;
+}
+
+p {
+  margin-top: 20px;
+  color: #aaa;
+  text-align: right;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  width: 300px;
+}
+
+.card.sad p {
+  text-align: left;
+}

@@ -1,10 +1,12 @@
 /*reset*/
-body,
-img {
+body {
   margin: unset;
   padding: unset;
 }
 
+img {
+  vertical-align: top;
+}
 h1,
 p,
 ul {
@@ -41,6 +43,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  height: 160px;
 }
 .header-title {
   font-size: 24px;
