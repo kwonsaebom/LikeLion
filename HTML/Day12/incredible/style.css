@@ -24,36 +24,60 @@ img {
 :root {
   --font-en: "Arial";
   --font-ko: "Noto Sans KR";
+
+  --color-white: #fff;
+  --color-gray-50: #999;
+  --color-gray-80: #222;
+  --color-gray-90: #111;
+  --color-black: #000;
 }
 
 body {
-  background-color: #111111;
+  background-color: var(--color-gray-90);
   font-family: var(--font-en);
 }
+
 .header {
   box-shadow: inset 0 0 20px black;
-  aspect-ratio: 24/9;
+  aspect-ratio: 16/9;
+  min-height: 0;
   position: relative;
+  overflow: hidden;
+
+  z-index: -1;
+  margin-bottom: -10%;
 }
 
 .header-image {
-  position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
-.header-container {
+
+.header::after {
+  content: " ";
   position: absolute;
-  box-shadow: inset 0 0 10px black;
-  width: 100%;
+
+  left: 0;
+  right: 0;
   bottom: 0;
-  background: linear-gradient(0deg, #111 0%, rgba(17, 17, 17, 0) 81.45%);
+  height: 30%;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(17, 17, 17, 0) 0%,
+    rgba(17, 17, 17, 1) 100%
+  );
 }
+
+.main {
+  margin: 0 100px 60px 60px;
+
+  z-index: 0;
+}
+
 .title-container {
-  background: linear-gradient(0deg, #111 0%, rgba(17, 17, 17, 0) 81.45%);
-  box-shadow: inset 0 0 10px black;
   color: white;
-  padding-left: 60px;
 }
 .title-button {
   font-size: 12px;
@@ -63,20 +87,19 @@ body {
   background-color: #ff2e00;
   border-radius: 8px;
   padding: 4px 12px;
+  height: 28px;
 }
 .title-title {
   font-size: 64px;
   font-weight: 700;
 }
-.main {
+
+.container {
   display: flex;
   gap: 100px;
-  margin: 0 100px 60px 60px;
-  box-shadow: inset 0 0 10px white;
 }
 
 .content {
-  box-shadow: inset 0 0 10px red;
   color: white;
   flex-grow: 1;
 }
@@ -91,7 +114,6 @@ body {
   padding-top: 26px;
 }
 .sidebar {
-  box-shadow: inset 0 0 10px blue;
   color: white;
 
   flex-basis: 250px;
@@ -99,6 +121,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  margin-top: -50px; /*z-index는 flexbox에도 사용 가능*/
 }
 
 .category-name {
@@ -112,7 +136,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  box-shadow: inset 0 0 2px white;
 }
 .category-tag {
   background-color: #222222;
@@ -144,12 +167,13 @@ body {
 }
 
 @media (max-width: 700px) {
-  .main {
+  .container {
     flex-direction: column;
     margin: 0 60px;
     gap: 48px;
   }
   .sidebar {
     max-width: 250px;
+    margin: 0;
   }
 }
