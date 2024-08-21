@@ -148,11 +148,14 @@ body {
 
   flex-grow: 1;
 }
-
-hr {
+.card-content.first {
+  width: 320px;
+  white-space: nowrap;
+}
+.hr {
   background-color: var(--color-gray-10);
   height: 4px;
-  width: 320px;
+  width: 325px;
   border: none;
 }
 
