@@ -1,0 +1,53 @@
+/*Reset*/
+fieldset,
+legend {
+  all: unset; /* 모든 속성을 선택하여 unset*/
+  display: block; /* 모든 속성이 초기화 되면 위험 기본 스타일이 유지되면 좋은 경우도 있음*/
+}
+
+/* all: unset을 통해 최대한 담백한 버튼 제작 --> 기본으로 제공하는 웹 접근성 관련 주요 기능들의 시각적 특성이 사라진다*/
+/* 하지만 html 요소 고유의 기능, submit 또는 focus 기능 자체는 유지 되어있음*/
+button {
+  all: unset;
+  display: block;
+}
+
+input,
+select {
+  all: unset;
+}
+
+select,
+input[type="text"] {
+  display: block;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 10px;
+  box-shadow: inset 0 0 10px red;
+}
+p {
+  margin: unset;
+  padding: unset;
+
+  font-size: unset;
+  font-weight: unset;
+  font-family: unset;
+  font-style: unset;
+}
+/* CSS Variables */
+:root {
+  --font-ko: "Noto Sans KR", sans-serif;
+}
+
+/* Typography */
+:root {
+  font-family: var(--font-ko);
+}
+
+/*Design*/
+.wrapper {
+  box-shadow: inset 0 0 10px black;
+  max-width: 600px;
+  margin: 100px auto;
+}

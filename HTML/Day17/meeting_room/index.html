@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>회의실 예약</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>회의실 예약</h1>
+      <form action="데이터를 서버쪽에 보냄" method="get">
+        <fieldset>
+          <legend>일반 정보</legend>
+          <label for="">어떤 용도로 이용할 예정이신가요?</label>
+          <select>
+            <option>디자이너와의 티타임</option>
+            <option>개발자와의 코드 리뷰</option>
+            <option selected>사장님과 연봉 협상</option>
+          </select>
+
+          <label for="">회사의 규모는 어떠한가요?</label>
+          <label><input type="radio" name="size" checked />2~8인 </label>
+          <label><input type="radio" name="size" />9~20인</label>
+          <label><input type="radio" name="size" />21~100인</label>
+
+          <label for="">어떤 장비가 필요 하신가요?</label>
+          <label><input type="checkbox" checked />빔 프로젝터</label>
+          <label><input type="checkbox" />화이트보드</label>
+          <label><input type="checkbox" />전동데스크</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>개인 정보</legend>
+
+          <label for="name">예약자의 성함을 알려 주세요.</label>
+          <input id="name" type="text" placeholder="성함 입력" />
+
+          <label for="topic">회의의 주제를 남겨주세요.</label>
+          <textarea id="topic" placeholder="주제에 대한 짧은 요약"></textarea>
+        </fieldset>
+        <button type="submit">예약 완료하기</button>
+      </form>
+    </div>
+  </body>
+</html>
