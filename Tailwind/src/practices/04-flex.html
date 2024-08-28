@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko-kR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <link rel="stylesheet" href="./../styles/main.css" />
+  </head>
+  <body class="font-pre flex flex-col justify-center items-center min-h-screen">
+    <h1 class="text-2xl text-center">플렉스 박스와 그리드</h1>
+
+    <div class="text-center bg-yellow-200 w-96 flex p-5 gap-5 mb-5">
+      <div class="text-3xl text-red-500 shrink-0">제목</div>
+      <div class="flex flex-col-reverse gap-3">
+        <span class="text-2xl text-orange-500">부제목</span>
+        <p>
+          '함께 성장하는 바른 교육' 이듬(EUID)과 멋쟁이 사자처럼 태킷(Techit)
+          스쿨이 만났습니다. '이듬' 교육이 지향하는 비전은 동반 성장에 있습니다.
+          강사에서 수강생으로 한 방향으로 흘러가는 지식 전달이 아닌, 함께
+          공감하고 이해하며 경험하는 교육 가치를 통해 공동의 혁신을 이끌어내는
+          것을 목표로 합니다. 멋쟁이 사자처럼 태킷 스쿨은 '함께'의 가치를
+          중요하게 생각합니다. 5년이 지나도, 10년이 지나도 IT 업계에 필요한
+          인재를 육성하는 교육을 제공하고, 기업의 HRD 파트너로 존재할 것이며
+          국내 대표 IT 교육 회사인 만큼 더 좋은 교육이 무엇인지를 끊임없이
+          고민하는 회사로 자리매김할 것입니다.
+        </p>
+      </div>
+    </div>
+    <div
+      class="text-center bg-yellow-200 w-96 grid grid-cols-[80px_1fr] place-content-center gap-5"
+    >
+      <div class="text-3xl text-red-500 row-span-2">제목</div>
+      <h2
+        class="text-2xl text-orange-500 order -1row-start-1 row-end-2 cold-start-2 col-end-3"
+      >
+        부제목
+      </h2>
+      <p>
+        '함께 성장하는 바른 교육' 이듬(EUID)과 멋쟁이 사자처럼 태킷(Techit)
+        스쿨이 만났습니다. '이듬' 교육이 지향하는 비전은 동반 성장에 있습니다.
+        강사에서 수강생으로 한 방향으로 흘러가는 지식 전달이 아닌, 함께 공감하고
+        이해하며 경험하는 교육 가치를 통해 공동의 혁신을 이끌어내는 것을 목표로
+        합니다. 멋쟁이 사자처럼 태킷 스쿨은 '함께'의 가치를 중요하게 생각합니다.
+        5년이 지나도, 10년이 지나도 IT 업계에 필요한 인재를 육성하는 교육을
+        제공하고, 기업의 HRD 파트너로 존재할 것이며 국내 대표 IT 교육 회사인
+        만큼 더 좋은 교육이 무엇인지를 끊임없이 고민하는 회사로 자리매김할
+        것입니다.
+      </p>
+    </div>
+  </body>
+</html>

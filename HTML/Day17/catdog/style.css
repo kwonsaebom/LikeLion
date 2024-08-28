@@ -12,7 +12,7 @@ body {
 .choice {
   width: 600px;
   margin: 100px auto;
-  display: flex; 
+  display: flex;
   gap: 20px;
 }
 
@@ -26,8 +26,15 @@ body {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   background-color: #caf0ff;
+  display: block;
+  overflow: hidden;
+}
+
+.choice-item input:checked + .choice-item-icon img {
+  transform: scale(1) translateY(0);
 }
 
 .choice-item-icon img {
-
+  transition: all 0.4s;
+  transform: scale(1) translateY(280px);
 }
