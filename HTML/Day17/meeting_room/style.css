@@ -103,9 +103,13 @@ body {
   --input-padding: 10px;
 }
 
+.title {
+  margin-top: -30px;
+}
 .choice {
   display: inline-flex;
   gap: 10px;
+  padding: 10px 0;
 }
 
 /* 
@@ -157,4 +161,10 @@ body {
 .wrapper {
   max-width: 600px;
   margin: 100px auto;
+}
+
+legend {
+  padding: 20px 0;
+  color: var(--color-primary);
+  font-weight: 700;
 }
