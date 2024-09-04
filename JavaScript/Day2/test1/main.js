@@ -10,10 +10,10 @@ const sum = () => {
 sum();
 
 //다음의 코드는 클래스를 생성하고 클래스의 함수를 호출하는 코드입니다.
-class USER {
-  NAME = "홍길동";
+class User {
+  name = "홍길동";
   sayHello = () => {
-    console.log(`hello, ${this.NAME}`);
+    console.log(`hello, ${this.name}`);
   };
 }
 new USER().sayHello();
