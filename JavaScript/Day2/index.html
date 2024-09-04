@@ -9,6 +9,7 @@
     <div>
       <button onclick="dialogTest()">dialog test</button>
       <button onclick="writeTest()">write test</button>
+      <button onclick="consoleTest()">console test</button>
     </div>
     <script>
       const dialogTest = () => {
@@ -21,10 +22,13 @@
         let name = prompt("이름을 입력해 주세요");
 
         document.write(
-          '<div>안녕하세요 <? style="color:blue;">' +
-            name +
-            "</b>님, 환영합니다!"
+          '<div>안녕하세요 style="color:blue;">' + name + "</b>님, 환영합니다!"
         );
+      };
+
+      const consoleTest = () => {
+        console.log("첫번째 로그 출력입니다");
+        console.log("두번째 출력입니다.");
       };
     </script>
   </body>
