@@ -1,19 +1,11 @@
 "use strict";
 
-const body = document.querySelector("body");
-
 for (let i = 1; i <= 9; i++) {
-  const border = document.createElement("div");
-  const dan = document.createElement("h3");
-
-  dan.textContent = `${i}단`;
-  border.appendChild(dan);
+  document.write("<div>");
+  document.write(`<h3>${i}단</h3>`); // 문자열 템플릿을 사용할 때는 중괄호를 포함하여 전체를 백틱(`)으로 감싸야 함
 
   for (let j = 1; j <= 9; j++) {
-    const result = document.createElement("p");
-
-    result.textContent = `${i}X${j}=${i * j}`;
-    border.appendChild(result);
+    document.write(`${i}X${j}=${i * j}<br>`); // 각 결과를 줄바꿈
   }
-  body.appendChild(border);
+  document.write("</div>");
 }
