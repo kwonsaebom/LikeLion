@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Test</title>
+    <style>
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      button {
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form">
+      <h1 class="title">회원가입</h1>
+      <label for="name"
+        >이름:
+        <input type="text" id="name" placeholder="이름을 입력하세요" />
+      </label>
+      <label for="phone"
+        >전화번호:
+        <input type="text" id="phone" placeholder="번호를 입력하세요" />
+      </label>
+      <label for="job"
+        >직업:
+        <select id="job">
+          <option>학생</option>
+          <option>회사원</option>
+          <option>백수</option>
+        </select>
+      </label>
+      <div class="button-container">
+        <button type="submit" class="sign-in">회원가입</button>
+        <button class="cancel">취소</button>
+      </div>
+      <p id="result"></p>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
+<!--177-->
