@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      p {
+        margin: unset;
+        padding: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">로그인</h1>
+    <form class="form">
+      <label for="id">
+        ID:
+        <input type="text" id="ID" />
+        <p class="id-msg" style="color: red"></p>
+      </label>
+      <label for="pw">
+        PW:
+        <input type="password" id="PW" />
+      </label>
+      <p class="pw-msg" style="color: red"></p>
+      <button type="submit" class="login">로그인</button>
+      <p class="result-msg"></p>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
