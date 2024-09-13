@@ -4,21 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
-    <style></style>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 10px auto;
+      }
+      ul.active {
+        border: 1px solid #888;
+        padding: 20px;
+      }
+      li {
+        border-bottom: 1px dotted brown;
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
     <h1>🎯 Array Test 🎯</h1>
-    <label for="word">
-      English word :
-      <input type="text" id="word" />
-    </label>
-    <button class="add">add</button>
-    <div class="button-container">
-      <button class="map">map</button>
-      <button class="filter">filter</button>
-      <button class="sort">sort</button>
+    <div class="container">
+      <label for="word">
+        English word :
+        <input type="text" id="word" />
+      </label>
+      <button class="add">add</button>
+
+      <div class="button-container">
+        <button class="map">map</button>
+        <button class="filter">filter</button>
+        <button class="sort">sort</button>
+      </div>
+      <ul class="list"></ul>
+      <script src="main.js"></script>
     </div>
-    <ul class="list"></ul>
-    <script src="main.js"></script>
   </body>
 </html>

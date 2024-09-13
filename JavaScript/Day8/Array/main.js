@@ -12,6 +12,7 @@ let word = [];
 
 function update(eachArray) {
   listNode.innerHTML = "";
+  listNode.classList.add("active");
 
   eachArray.forEach((data) => {
     if (data.trim().length > 0) {
