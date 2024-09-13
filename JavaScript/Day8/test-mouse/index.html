@@ -21,15 +21,15 @@
     <form class="form">
       <label for="id">
         ID:
-        <input type="text" id="ID" />
+        <input type="text" id="ID" onblur="idValidCheck()" />
         <p class="id-msg" style="color: red"></p>
       </label>
       <label for="pw">
         PW:
-        <input type="password" id="PW" />
+        <input type="password" id="PW" onblur="pwValidCheck()" />
       </label>
       <p class="pw-msg" style="color: red"></p>
-      <button type="submit" class="login">로그인</button>
+      <button type="button" class="login" onclick="login()">로그인</button>
       <p class="result-msg"></p>
     </form>
     <script src="main.js"></script>
