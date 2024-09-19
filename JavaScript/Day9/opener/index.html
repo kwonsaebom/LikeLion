@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opener Test</title>
+    <script>
+      function goChild() {
+        window.open(
+          "child.html",
+          "_blank",
+          "left=100, top=100, width=500, height=400"
+        );
+      }
+      var mainData = 10; // let이면 자식 창에서 접근 x / var 키워드 선언은 가능
+      function mainFun() {
+        console.log("parent");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>I am a Parent page!</h1>
+    <button onClick="goChild()">Go!!</button>
+  </body>
+</html>

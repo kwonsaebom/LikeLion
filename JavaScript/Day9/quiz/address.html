@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child Page</title>
+    <script>
+      function checkBlank() {
+        const input = document.querySelector(".input");
+
+        if (input.value.trim() === "") {
+          alert("주소를 입력해야 합니다.");
+        } else {
+          opener.child = this;
+          opener.getAddress(input.value);
+          window.close();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>주소</h1>
+    <input type="text" name="address" class="input" />
+    <button onClick="checkBlank()">입력</button>
+  </body>
+</html>

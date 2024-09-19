@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parent Page</title>
+    <script>
+      function goAddress() {
+        window.open("address.html", "_black");
+      }
+      function getAddress(address) {
+        document.querySelector("#address").textContent = address;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>회원가입 페이지</h1>
+    <button onClick="goAddress()">주소입력</button>
+    <h3 id="address"></h3>
+  </body>
+</html>
