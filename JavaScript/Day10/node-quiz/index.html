@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+  </head>
+  <body>
+    <h1 id="title">회원가입</h1>
+    <label for="name"
+      >이름:
+      <input id="name" />
+    </label>
+    <div>
+      <label for="hobby"
+        >취미 <br />
+        <input type="checkbox" name="hobby" value="여행" />여행
+        <input type="checkbox" name="hobby" value="요리" />요리</label
+      >
+    </div>
+    <div>
+      <label for="gender"
+        >성별<br />
+        <input type="radio" name="gender" value="남성" />남성
+        <input type="radio" name="gender" value="여성" />여성
+      </label>
+    </div>
+    <button id="signUp">회원가입</button>
+    <button id="cancel">취소</button>
+    <div id="container"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
