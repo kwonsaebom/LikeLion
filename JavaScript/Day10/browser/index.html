@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Test</title>
+    <script>
+      function locationTest() {
+        console.log(location.href);
+        console.log(location.protocol);
+        console.log(location.host);
+        console.log(location.hostname);
+        console.log(location.port);
+        console.log(location.pathname);
+        console.log(location.search);
+        console.log(location.hash);
+        console.log(location.origin);
+      }
+      function goGoogle1() {
+        location.href = "http://www.google.com";
+      }
+      function goGoogle2() {
+        location.replace("http://www.google.com");
+      }
+      function back() {
+        history.back();
+      }
+      function forward() {
+        history.forward();
+      }
+      function go() {
+        let input = prompt("숫자를 입력하세요");
+
+        if (isNaN(input)) {
+          alert("Please Enter the NUMBER");
+        } else {
+          let num = parseInt(input);
+          history.go(num);
+        }
+      }
+      function navigatorTest() {
+        console.log(navigator.cookieEnabled);
+        console.log(navigator.language);
+        console.log(navigator.onLine);
+        console.log(naviator.userAgent);
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Location Test</h3>
+    <button onClick="locationTest()">location test</button>
+    <button onclick="goGoogle1()">go google - href</button>
+    <button onclick="goGoogle2()">go google - replace()</button>
+    <!--history test-->
+    <h3>History Test</h3>
+    <button onclick="back()">back</button>
+    <button onclick="forward()">forward</button>
+    <button onclick="go()">go</button>
+
+    <h3>Navigator Test</h3>
+    <button onclick="navigatorTest()">Navigator Test</button>
+  </body>
+</html>

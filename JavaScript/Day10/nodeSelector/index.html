@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nodeSelector Test</title>
+  </head>
+  <body>
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+    <div>five</div>
+    <div>six</div>
+
+    <input id="inputBox" />
+    <button class="button" onclick="change()">change</button>
+
+    <script>
+      function change() {
+        const inputNode = document.querySelector("#inputBox");
+        const num = parseInt(inputNode.value);
+        const divs = document.querySelectorAll("div");
+
+        if (isNaN(num)) {
+          alert("Please enter the NUMBER!!");
+        } else {
+          divs[num - 1].style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
