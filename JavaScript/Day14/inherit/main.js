@@ -22,17 +22,18 @@ HighSchool.prototype = School.prototype;
 
 HighSchool.prototype.grade = function () {
   let result = "";
+  let avg = this.avg();
 
-  if (this.avg >= 90) result = "A";
-  else if (this.avg >= 80 && this.avg < 90) result = "B";
-  else if (this.avg >= 70 && this.avg < 80) result = "C";
-  else if (this.avg >= 60 && this.avg < 70) result = "D";
-  else result = "D";
+  if (avg >= 90) result = "A";
+  else if (avg >= 80) result = "B";
+  else if (avg >= 70) result = "C";
+  else if (avg >= 60) result = "D";
+  else result = "F";
 
   return result;
 };
 
-let high1 = new HighSchool(100, 85);
+let high1 = new HighSchool(80, 85);
 console.log("highschool sum = ", high1.sum());
 console.log("highschool average = ", high1.avg());
 console.log("highschool grade = ", high1.grade());
