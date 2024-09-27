@@ -19,3 +19,5 @@ products.forEach((product) => {
   optionNode.textContent = `${product.name} - ${product.price}`;
   selectNode.appendChild(optionNode);
 });
+
+console.log(products);
