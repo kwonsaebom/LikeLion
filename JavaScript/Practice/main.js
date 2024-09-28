@@ -21,3 +21,5 @@ products.forEach((product) => {
 });
 
 console.log(products);
+console.log(products);
+console.log(products);
