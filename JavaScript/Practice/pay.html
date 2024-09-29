@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pay</title>
+    <script>
+      const totalPrice = localStorage.getItem("totalPrice");
+
+      function popUp() {
+        const input = document.querySelector("#payNumber");
+
+        if (input.value.trim() === "") {
+          alert("신용카드 번호를 입력하세요");
+        } else {
+          alert(`${input.value}로 ${totalPrice}원이 결제 완료 되었습니다.`);
+          window.close();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>결제창</h1>
+    <p id="total-price">원을 결제하겠습니다</p>
+    <p>신용카드 번호를 입력하고 결제 버튼을 눌러 주세요</p>
+    <input type="text" name="payNumber" id="payNumber" />
+    <button id="pay" onClick="popUp()">결제</button>
+  </body>
+</html>
