@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Answer</title>
+  </head>
+  <body>
+    <!-- html에서 onXXX 로 이벤트 핸들러 호출할 때 함수에 event 객체가 전달되어야 한다면 함수에 전달하기 -->
+    <select id="products" multiple onchange="selectChange(event)"></select>
+    <div id="result"></div>
+    <button onclick="payment()">결제하기</button>
+    <script src="main.js"></script>
+  </body>
+</html>
