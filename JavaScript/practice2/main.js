@@ -12,4 +12,5 @@ var req = new Request(url);
 
 fetch(req).then(function (response) {
   console.log(response.json());
+  console.log(response.json());
 });
