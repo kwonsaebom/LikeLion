@@ -1,7 +1,7 @@
 const searchButton = document.querySelector("#search");
 const inputNode = document.querySelector("#input-box");
 const resultBox = document.querySelector(".result-container");
-const API_KEY = "98e79f5f8ca244ce994fa51568399af3";
+const API_KEY = "API KEY";
 
 searchButton.addEventListener("click", () => {
   const search = inputNode.value;
