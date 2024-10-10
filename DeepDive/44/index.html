@@ -17,7 +17,7 @@
       xhr.onload = () => {
         if (xhr.status === 200) {
           document.querySelector("pre").textContent = xhr.response;
-          console.log("success", xhr.status, xhr.statusText);
+          console.log("success");
         } else {
           console.log("Error", xhr.status, xhr.statusText);
         }
